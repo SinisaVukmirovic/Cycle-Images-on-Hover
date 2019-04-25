@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Paprika|Tangerine:700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom,#010101,#2d2d2d);
+    color: #ddd;
+    font-family: 'Paprika', cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to top,#010101, #2d2d2d);
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+}
+
+header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 10rem;
+    background-image: url('img/cover.png'), linear-gradient(100deg,#010101, #2d2d2d);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+    header h1, header h3 {
+        margin: .5rem 0;
+    }
+    header h1 {
+        font-family: 'Tangerine', cursive;
+        font-size: 5rem;
+        color: #fff;
+    }
+
+main h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    margin: 4rem 0 1rem;
+    text-align: center;
+}
+main hr {
+    width: 70%;
+    margin: 0 15%;
+}
+
+#items {
+    margin: 5rem;
+}
+
+.item {
+    display: flex;
+    margin: 5rem 0 10rem;
+}
+    .item h3, .item img, .item p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item h3 {
+        flex: 1;
+        font-family: 'Tangerine', cursive;
+        font-size: 3rem;
+        color: #fff;
+    }
+    .item img {
+        flex: 2;
+    }
+    .item p {
+        flex: 3;
+        font-size: 1.25rem;
+        line-height: 2;
+    }
+
+    .item img {
+        width: 35%;
+        height: 100%;
+        margin: 0 5rem;
+        padding: 2rem 0;
+        border: 1px solid #fff;
+        background: #090909;
+        cursor: pointer;
+        transition: all .5s;
+    }
+        .item img:hover {
+            box-shadow: 0 0 10px #eee;
+        }
+
+footer {
+    background: #010101;
+    text-align: center;
+    padding: 1rem;
+}
+    footer h2 {
+        font-size: 3rem;
+        font-family: 'Tangerine', cursive;
+    }
